@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KatalogMobilny.NewProductPage"
+             Title="NewProductPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label Text="Start developing now" />
+        <Entry x:Name="entry" Placeholder="Type here"/>
+        <Label Text="Cena" />
+        <Entry x:Name="entryCena" Placeholder="0" Keyboard="Numeric"/>
+        <Label Text="Opis" />
+        <Picker x:Name="picker" Title="Select an option">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Option 1</x:String>
+                    <x:String>Option 2</x:String>
+                    <x:String>Option 3</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+        <HorizontalStackLayout>
+            <Switch x:Name="switch1" />
+            <Label Text="Switch" VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
